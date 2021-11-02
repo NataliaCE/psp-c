@@ -26,6 +26,7 @@ int main(int argc, char const *argv[])
         signal(SIGUSR1, manejadorPadre);
         printf("[PROCESO: %d]: Manejador activado", getpid());
         pause();
+        pid_t pid_hijo = wait(NULL);
     }
     return 0;
 }
