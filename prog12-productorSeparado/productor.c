@@ -25,7 +25,7 @@ int main(int argc, char const *argv[])
 
 void gestor_senyal(int senyal){
     if(senyal == SIGUSR2){ //La señal 2 la usaremos para finalizar.
-        final = true;
+        //final = true;
     }
     //cualquier otra señal que hayamos asociado a la función, no hará nada.
 }
